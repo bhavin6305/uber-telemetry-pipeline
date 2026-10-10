@@ -2,8 +2,9 @@
 pyspark==3.5.3
 delta-spark==3.2.1
 
-# Kafka client for the producer (>=2.1 fixes Python 3.12 compatibility issues)
+# Kafka client for the producer
 kafka-python>=2.1.0,<3.0
 
-# Used by the producer to read the Uber CSV
+# Producer / sample prep
 pandas>=2.0,<3.0
+pyarrow>=14
