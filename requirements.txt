@@ -1,0 +1,9 @@
+# Spark 3.5.x pairs with Delta Lake 3.2.x (Delta/Spark versions must match)
+pyspark==3.5.3
+delta-spark==3.2.1
+
+# Kafka client for the producer (>=2.1 fixes Python 3.12 compatibility issues)
+kafka-python>=2.1.0,<3.0
+
+# Used by the producer to read the Uber CSV
+pandas>=2.0,<3.0
