@@ -37,3 +37,5 @@ def get_spark(app_name, with_kafka=False, driver_memory="1g", shuffle_partitions
     spark = configure_spark_with_delta_pip(builder, extra_packages=extra_packages).getOrCreate()
     spark.sparkContext.setLogLevel("WARN")
     return spark
+
+
